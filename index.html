@@ -1,276 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Caro | UX/UI Designer Portfolio</title>
-    <meta name="description" content="Portfolio of Robert Caro, a professional UX/UI Designer specializing in modern, high-impact digital experiences.">
+    <title>Bhanuka | Full-stack Web Developer</title>
+    <meta name="description"
+        content="Portfolio of S.Bhanuka Chandrasena, a professional Full-stack Web Developer specializing in creating modern web experiences.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">RC<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <nav>
+                <div class="logo">Bhanuka<span>.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mood-switcher" id="mood-toggle">
+                    <div class="mood-option dev active" title="Developer Mode">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="mood-option design" title="Designer Mode">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="mood-slider"></div>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content" data-aos="fade-right">
-                <h2 class="greeting">HELLO, I'M</h2>
-                <h1 class="name">ROBERT<br>CARO</h1>
-                <p class="role">SENIOR UX/UI DESIGNER</p>
-                <div class="hero-btns">
-                    <a href="#portfolio" class="btn btn-primary">VIEW WORK</a>
-                    <a href="#" class="btn btn-secondary">DOWNLOAD CV</a>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="subtitle">HELLO!</span>
+                <h1>I'm <span class="accent-text">S.Bhanuka Chandrasena</span></h1>
+                <h2>Full-stack Web Developer</h2>
+                <p>I’m a Full Stack Developer who loves turning ideas into fully functional digital experiences.
+                    From clean and responsive front-end interfaces to powerful back-end systems and databases,
+                    <br>I enjoy working across the entire stack. I’m always learning new technologies and building
+                    projects
+                    that are fast,
+                    scalable, and meaningful.
+                </p>
+                <a href="#portfolio" class="btn btn-primary">View My Projects</a>
+                <a href="CV.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download CV</a>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/16wzfhsVfq/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/TKB200" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/sbhanukacxk?igsh=MWlsZXNxcmY2OWhtbw==&utm_source=ig_contact_invite"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="behance-link"><i
+                            class="fab fa-behance"></i></a>
                 </div>
             </div>
-            <div class="hero-image" data-aos="fade-left">
-                <div class="image-wrapper">
-                    <img src="assets/hero-portrait.png" alt="Robert Caro">
+            <div class="hero-image">
+                <div class="img-container">
+                    <img src="BK.jpeg" alt="S.Bhanuka Chandrasena">
+                    <div class="img-glow"></div>
                 </div>
             </div>
         </div>
-        <div class="scroll-down">
-            <span>SCROLL DOWN</span>
-            <i class="fa-solid fa-chevron-down"></i>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="section-header">
+                <h2>About <span class="accent-text">Me</span></h2>
+            </div>
+
+            <div class="img-container">
+                <img src="BK.jpeg" alt="S.Bhanuka Chandrasena">
+                <div class="img-glow"></div>
+            </div>
+
+            <h3>Full-stack Web Developer</h3>
+            <p>I am a passionate Full-stack Web Developer with a strong foundation in building modern, responsive
+                applications. My journey in tech is driven by a desire to solve complex problems through clean code and
+                intuitive design. Whether it's crafting seamless user interfaces or architecting robust back-end
+                systems, I focus on delivering high-quality digital solutions that add real value. I am constantly
+                exploring the latest industry trends and refining my skills to build the next generation of web
+                experiences.</p>
+
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="CV.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download CV</a>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <section class="skills">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-number">01</span>
-                <h2 class="section-title">SOFTWARE SKILLS</h2>
+            <div class="section-header">
+                <h2>My <span class="accent-text">Skills</span></h2>
             </div>
+
             <div class="skills-grid">
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                <!-- Development Skills -->
+                <div class="skill-item">
                     <div class="skill-info">
-                        <span>ADOBE PHOTOSHOP</span>
+                        <span>HTML / CSS / JS</span>
                         <span>95%</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%;"></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="95%"></div>
                     </div>
                 </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="skill-item">
                     <div class="skill-info">
-                        <span>ADOBE ILLUSTRATOR</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-info">
-                        <span>FIGMA / SKETCH</span>
-                        <span>98%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 98%;"></div>
-                    </div>
-                </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="skill-info">
-                        <span>AFTER EFFECTS</span>
+                        <span>PHP / SQL</span>
                         <span>85%</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%;"></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85%"></div>
                     </div>
                 </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+
+                <!-- Design Skills -->
+                <div class="skill-item">
                     <div class="skill-info">
-                        <span>WEB DESIGN (HTML/CSS)</span>
-                        <span>80%</span>
+                        <span>Adobe Photoshop</span>
+                        <span>98%</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%;"></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="98%"></div>
                     </div>
                 </div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+
+                <div class="skill-item">
                     <div class="skill-info">
-                        <span>WIX / WORDPRESS</span>
+                        <span>Adobe Illustrator</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Adobe After Effects</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Adobe Premiere Pro</span>
                         <span>92%</span>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 92%;"></div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="92%"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="accent-text">Services</span></h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web development</h3>
+                    <p>Building responsive and fast websites using modern technologies.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Graphic Designer</h3>
+                    <p>Creating stunning visual designs for brands and digital products.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Digital Marketer</h3>
+                    <p>Helping businesses grow their online presence and reach.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-number">02</span>
-                <h2 class="section-title">LATEST WORK</h2>
+            <div class="section-header">
+                <h2>My <span class="accent-text">Projects</span></h2>
+                <p>Check out some of my latest work on GitHub</p>
             </div>
+
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="assets/project-1.png" alt="Fintech App Design">
-                    <div class="portfolio-overlay">
-                        <div class="project-info">
-                            <h3>FINTECH APP</h3>
-                            <p>Mobile UI/UX Design</p>
-                        </div>
-                        <a href="#" class="view-project"><i class="fa-solid fa-plus"></i></a>
+                <!-- Project 1: Student Management System -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1000&auto=format&fit=crop"
+                        alt="Student Management System">
+                    <div class="project-overlay">
+                        <h3>Student Management System</h3>
+                        <p>Full system for managing courses, attendance, and student reports with PDF generation.</p>
+                        <a href="https://github.com/TKB200/Student-Management-System" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> View Repo</a>
                     </div>
                 </div>
-                <!-- Reusing project-1 as a placeholder for others since I hit the limit, but with different titles -->
-                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="assets/project-1.png" alt="Creative Dashboard" style="filter: hue-rotate(45deg);">
-                    <div class="portfolio-overlay">
-                        <div class="project-info">
-                            <h3>CREATIVE DASHBOARD</h3>
-                            <p>Web Application</p>
-                        </div>
-                        <a href="#" class="view-project"><i class="fa-solid fa-plus"></i></a>
+
+                <!-- Project 2: School Attendance System -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop"
+                        alt="School Attendance System">
+                    <div class="project-overlay">
+                        <h3>School Attendance System</h3>
+                        <p>A web-based attendance tracking platform built with HTML, CSS, JS, and PHP.</p>
+                        <a href="https://github.com/TKB200/School-Attendance-System" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> View Repo</a>
                     </div>
                 </div>
-                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="assets/project-1.png" alt="E-commerce Branding" style="filter: hue-rotate(180deg);">
-                    <div class="portfolio-overlay">
-                        <div class="project-info">
-                            <h3>E-COMMERCE BRANDING</h3>
-                            <p>Brand Identity</p>
-                        </div>
-                        <a href="#" class="view-project"><i class="fa-solid fa-plus"></i></a>
+
+                <!-- Project 3: Bank Management System -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1000&auto=format&fit=crop"
+                        alt="Bank Management System">
+                    <div class="project-overlay">
+                        <h3>Bank Management System</h3>
+                        <p>Secure banking simulation featuring transaction management and user accounts.</p>
+                        <a href="https://github.com/TKB200/Bank-Management-System-ii" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> View Repo</a>
                     </div>
                 </div>
+
+                <!-- Project 4: Vehicle Booking Management -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1000&auto=format&fit=crop"
+                        alt="Vehicle Booking Management System">
+                    <div class="project-overlay">
+                        <h3>Vehicle Booking System</h3>
+                        <p>A web-based application designed to efficiently manage the reservation, allocation, and usage
+                            of vehicles.</p>
+                        <a href="https://github.com/TKB200/Vehicle-Booking-management-System" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Booking WebApp -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1000&auto=format&fit=crop"
+                        alt="Booking WebApp">
+                    <div class="project-overlay">
+                        <h3>Booking Web App</h3>
+                        <p>Modern reservation platform for meeting rooms and resource allocation.</p>
+                        <a href="https://github.com/TKB200/BOOKING-WEBAPP" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Quiz App -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=1000&auto=format&fit=crop"
+                        alt="Quiz App">
+                    <div class="project-overlay">
+                        <h3>Premium Quiz App</h3>
+                        <p>Interactive learning app with a sleek interface and real-time score tracking.</p>
+                        <a href="https://github.com/TKB200/Quiz-app" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project 7: Pacman -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop"
+                        alt="Pacman Game">
+                    <div class="project-overlay">
+                        <h3>Pacman JavaScript</h3>
+                        <p>A classic Pacman game recreation using pure JavaScript logic.</p>
+                        <a href="https://github.com/TKB200/Pacman" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project 8: Brick Bouncing Game -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1000&auto=format&fit=crop"
+                        alt="Brick Game">
+                    <div class="project-overlay">
+                        <h3>Brick Bouncing Game</h3>
+                        <p>Smooth, responsive brick breaker game with physics-based gameplay.</p>
+                        <a href="https://github.com/TKB200/Brick-bouncing-game" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project 9: IT Help Desk -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1000&auto=format&fit=crop"
+                        alt="IT Help Desk System">
+                    <div class="project-overlay">
+                        <h3>IT Help Desk System</h3>
+                        <p>Professional support management system for tracking and resolving IT tickets effectively.</p>
+                        <a href="https://github.com/TKB200/IT-Help-Desk" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github-cta">
+                <a href="https://github.com/TKB200" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> See All on GitHub
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience section">
+    <!-- Design Portfolio Section (Hidden by Default) -->
+    <section id="design-portfolio" class="portfolio design-only">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-number">03</span>
-                <h2 class="section-title">MY EXPERIENCE</h2>
+            <div class="section-header">
+                <h2>Design <span class="accent-text">Showcase</span></h2>
+                <p>Visual Architect & Branding Specialist | Fusing aesthetics with functionality</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - PRESENT</div>
-                    <div class="timeline-content">
-                        <h3>SENIOR UX/UI DESIGNER</h3>
-                        <p class="company">CREATIVE FLOW STUDIO</p>
-                        <p>Leading design teams for high-profile clients, ensuring seamless user journeys and cutting-edge visual aesthetics.</p>
+
+            <div class="portfolio-grid">
+                <!-- Design Card 1 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000"
+                        alt="Branding Design">
+                    <div class="project-overlay">
+                        <h3>Creative Branding</h3>
+                        <p>Unique identity design and brand guidelines.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
                     </div>
                 </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018 - 2021</div>
-                    <div class="timeline-content">
-                        <h3>UI DESIGNER</h3>
-                        <p class="company">PIXEL PERFECT AGENCY</p>
-                        <p>Focused on mobile application design and interactive prototyping using Figma and After Effects.</p>
+
+                <!-- Design Card 2 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000" alt="UI Design">
+                    <div class="project-overlay">
+                        <h3>UI/UX Concepts</h3>
+                        <p>Modern and intuitive user interfaces for web and mobile.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
                     </div>
                 </div>
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2015 - 2018</div>
-                    <div class="timeline-content">
-                        <h3>JUNIOR DESIGNER</h3>
-                        <p class="company">BLUEPRINT MEDIA</p>
-                        <p>Assisted in brand identity creation and web layout design for various local businesses.</p>
+
+                <!-- Design Card 3 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000"
+                        alt="Digital Illustration">
+                    <div class="project-overlay">
+                        <h3>Digital Illustration</h3>
+                        <p>Vibrant artworks and custom graphic elements.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
                     </div>
                 </div>
+
+                <!-- Design Card 4 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000"
+                        alt="Poster Design">
+                    <div class="project-overlay">
+                        <h3>Visual Communication</h3>
+                        <p>Impactful poster and social media graphic designs.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Design Card 5 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000"
+                        alt="Logo Design">
+                    <div class="project-overlay">
+                        <h3>Logo Artistry</h3>
+                        <p>Minimalist and iconic logos that define brands.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Design Card 6 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000"
+                        alt="Mobile App UI">
+                    <div class="project-overlay">
+                        <h3>App Experience</h3>
+                        <p>User-centric mobile application layouts and flows.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Design Card 7 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000"
+                        alt="Social Media Kit">
+                    <div class="project-overlay">
+                        <h3>Social Media Presence</h3>
+                        <p>Cohesive visual kits for digital marketing campaigns.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Design Card 8 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000"
+                        alt="Package Design">
+                    <div class="project-overlay">
+                        <h3>Premium Packaging</h3>
+                        <p>Luxury product packaging and tactile brand experiences.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Design Card 9 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000"
+                        alt="Abstract 3D">
+                    <div class="project-overlay">
+                        <h3>Motion & 3D</h3>
+                        <p>Dynamic 3D renders and abstract visual experiments.</p>
+                        <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="project-link">
+                            <i class="fab fa-behance"></i> View on Behance
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="behance-cta">
+                <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-behance"></i> Full Portfolio on Behance
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Designing Software Section (Hidden by Default) -->
+    <section id="design-software" class="design-software design-only">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-number">04</span>
-                <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="section-header">
+                <h2>Creative <span class="accent-text">Toolkit</span></h2>
+                <p>The industry-standard software I use to bring ideas to life.</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>LOCATION</h4>
-                            <p>Melbourne, Australia</p>
-                        </div>
+
+            <div class="software-grid">
+                <!-- Photoshop -->
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fas fa-image"></i>
                     </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>EMAIL</h4>
-                            <p>robert.caro@example.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4>PHONE</h4>
-                            <p>+61 400 000 000</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-behance"></i></a>
-                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
+                    <h3>Adobe Photoshop</h3>
+                    <p>Advanced image editing, photo manipulation, and digital painting for stunning visuals.</p>
                 </div>
-                <form class="contact-form" data-aos="fade-left">
-                    <div class="form-group">
-                        <input type="text" placeholder="YOUR NAME" required>
+
+                <!-- Illustrator -->
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fas fa-pen-nib"></i>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="YOUR EMAIL" required>
+                    <h3>Adobe Illustrator</h3>
+                    <p>Vector-based design for logos, icons, and complex illustrations with perfect scalability.</p>
+                </div>
+
+                <!-- After Effects -->
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fas fa-film"></i>
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="YOUR MESSAGE" rows="5" required></textarea>
+                    <h3>Adobe After Effects</h3>
+                    <p>Motion graphics and visual effects to create dynamic and engaging video content.</p>
+                </div>
+
+                <!-- Premiere Pro -->
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fas fa-video"></i>
                     </div>
-                    <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-                </form>
+                    <h3>Adobe Premiere Pro</h3>
+                    <p>Professional video editing for cinematic results and high-quality storytelling.</p>
+                </div>
+
+                <!-- Figma -->
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Figma</h3>
+                    <p>Iterative UI/UX design and prototyping for modern web and mobile applications.</p>
+                </div>
+
+                <!-- CorelDRAW -->
+                <div class="software-card">
+                    <div class="software-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>CorelDRAW</h3>
+                    <p>Versatile graphic design software for layout, tracing, and professional print projects.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 ROBERT CARO. ALL RIGHTS RESERVED.</p>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="logo">Bhanuka<span>.</span></div>
+                <p>&copy; 2026 S.Bhanuka Chandrasena. All rights reserved.</p>
+            </div>
+            <div class="footer-stats">
+                <div class="visitor-counter">
+                    <span class="pulse-dot"></span>
+                    <span class="stats-label">Live Profile Views:</span>
+                    <span id="view-count">0000</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/16wzfhsVfq/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/TKB200" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/sbhanukacxk?igsh=MWlsZXNxcmY2OWhtbw==&utm_source=ig_contact_invite"
+                    target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.behance.net/BHanukaChandrasena" target="_blank" class="behance-link"><i
+                        class="fab fa-behance"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!-- AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
